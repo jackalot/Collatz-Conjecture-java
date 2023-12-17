@@ -30,6 +30,14 @@ public class Start {
 	{
 		int input = GetInput();
 		System.out.println(input);
-		
+		int steps = 0;
+		while(input != 1)
+		{
+			input = CheckEvenOrOdd(input);
+			System.out.println(input);
+			steps++;
+		}
+		System.out.println("Steps are " + steps);
+
 	}
 }
