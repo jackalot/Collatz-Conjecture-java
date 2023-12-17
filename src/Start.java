@@ -1,5 +1,6 @@
 import javax.swing.JOptionPane;
 public class Start {
+	
 	public static int GetInput()
 	{
 		String input = JOptionPane.showInputDialog("Please insert an integer greater than 1");
@@ -15,6 +16,7 @@ public class Start {
 	public static void main(String[] args)
 	{
 		int input = GetInput();
-		System.out.print(input);
+		System.out.println(input);
+		
 	}
 }
