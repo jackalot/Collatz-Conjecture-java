@@ -1,6 +1,19 @@
 import javax.swing.JOptionPane;
 public class Start {
-	
+	private static int CheckEvenOrOdd(int input)
+	{
+		//EVEN
+		if(input % 2 == 0)
+		{
+			input /= 2;
+		}
+		else //odd
+		{
+			input *= 3;
+			input += 1;
+		}
+		return input;
+	}
 	private static int GetInput()
 	{
 		String input = JOptionPane.showInputDialog("Please insert an integer greater than 1");
